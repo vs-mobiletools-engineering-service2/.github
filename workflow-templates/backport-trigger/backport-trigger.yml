@@ -23,7 +23,7 @@ jobs:
 
   launchBackportBuild:
     needs: setupBackport
-    uses: vs-mobiletools-engineering-service2/backport-bot-action/.github/workflows/backport-action.yml@v1.2
+    uses: vs-mobiletools-engineering-service2/backport-bot-action/.github/workflows/backport-action.yml@v1.0-test
     with:
       pull_request_url: ${{ github.event.issue.pull_request.url }}
       target_branch: ${{ needs.setupBackport.outputs.target_branch }}
